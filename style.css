@@ -12,19 +12,6 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: 676px) {
-  .notif {
-    padding-bottom: 10px;
-  }
-
-  .notif-btn {
-    float: none;
-  }
-
-  .logo {
-    margin-top: 100px
-  }
-}
 
 .notif-content {
   max-width: 720px;
@@ -34,7 +21,7 @@ body {
   max-width: 70%;
   display: inline-block;
   margin-left: 70px;
-
+  
 }
 
 span {
@@ -49,7 +36,7 @@ span {
   /* display: inline-block; */
   /* margin-left: 20px;
   margin-bottom: 20px; */
-
+  
 }
 
 .btn-notif {
@@ -119,4 +106,26 @@ span {
 footer {
   margin: 0px;
   background-color: red;
+}
+
+@media only screen and (max-width: 676px) {
+  .notif {
+    padding-bottom: 10px;
+  }
+
+  .notif-btn {
+    float: none;
+    margin-left: 70px;
+    margin-top: 0px;
+  }
+
+  .logo {
+    margin-top: 120px
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    margin-top: 140px
+  }
 }
