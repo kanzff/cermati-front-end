@@ -3,15 +3,20 @@ body {
   padding: 0px;
 }
 
-.notif {
+#notif {
   position: fixed;
   width: 100%;
   padding: 0px;
   background-color: white;
   display: flex;
   justify-content: center;
+  transition: .8s;
+  top: 0px;
 }
 
+#notif.hidden {
+  top: -270px;
+}
 
 .notif-content {
   max-width: 720px;
@@ -109,7 +114,7 @@ footer {
 }
 
 @media only screen and (max-width: 676px) {
-  .notif {
+  #notif {
     padding-bottom: 10px;
   }
 
