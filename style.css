@@ -111,11 +111,14 @@ span {
 
 .highlight-panel {
   margin-top: 0px;
-  background-color: green;
-  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(209, 209, 209);
+  color: rgb(43, 43, 43);
+  width: 100% - 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1.5fr 1.5fr;
+  grid-template-rows: 1.7fr 1.5fr 1.5fr;
   grid-template-areas: 
     "header header header"
     "content1 content2 content3"
@@ -123,40 +126,55 @@ span {
   ;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 #highlight-header {
   text-align: center;
-  background: blue;
+  /* background: blue; */
+  padding-top: 25px;
   grid-area: header;
 }
 
 #content1 {
-  background: blueviolet;
+  /* background: blueviolet; */
   grid-area: content1;
 }
 
 #content2 {
-  background: rgb(226, 43, 43);
+  /* background: rgb(226, 43, 43); */
   grid-area: content2;
 }
 
 #content3 {
-  background: rgb(43, 226, 52);
+  /* background: rgb(43, 226, 52); */
   grid-area: content3;
 }
 
 #content4 {
-  background: rgb(226, 183, 43);
+  /* background: rgb(226, 183, 43); */
   grid-area: content4;
 }
 
 #content5 {
-  background: rgb(226, 43, 202);
+  /* background: rgb(226, 43, 202); */
   grid-area: content5;
 }
 
 #content6 {
-  background: rgb(67, 92, 67);
+  /* background: rgb(67, 92, 67); */
   grid-area: content6;
+}
+
+#content1, #content2, #content3, #content4, #content5, #content6 {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  border-color: grey;
+  margin: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 footer {
