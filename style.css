@@ -59,6 +59,7 @@ span {
   background-repeat: no-repeat;
   width: 100%;
   height: 680px;
+  margin-bottom: 0px;
 }
 
 .logo {
@@ -75,7 +76,7 @@ span {
 .main-content {
   /* justify-content: center; */
   width: 100%;
-  height: 100%;
+  height: 640px;
   background: rgb(2 32 64 / 68%);
   padding-top: 40px;
 }
@@ -108,6 +109,56 @@ span {
   background-color: white;
 }
 
+.highlight-panel {
+  margin-top: 0px;
+  background-color: green;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1.5fr 1.5fr;
+  grid-template-areas: 
+    "header header header"
+    "content1 content2 content3"
+    "content4 content5 content6"
+  ;
+}
+
+#highlight-header {
+  text-align: center;
+  background: blue;
+  grid-area: header;
+}
+
+#content1 {
+  background: blueviolet;
+  grid-area: content1;
+}
+
+#content2 {
+  background: rgb(226, 43, 43);
+  grid-area: content2;
+}
+
+#content3 {
+  background: rgb(43, 226, 52);
+  grid-area: content3;
+}
+
+#content4 {
+  background: rgb(226, 183, 43);
+  grid-area: content4;
+}
+
+#content5 {
+  background: rgb(226, 43, 202);
+  grid-area: content5;
+}
+
+#content6 {
+  background: rgb(67, 92, 67);
+  grid-area: content6;
+}
+
 footer {
   margin: 0px;
   background-color: red;
@@ -132,5 +183,34 @@ footer {
 @media only screen and (max-width: 500px) {
   .logo {
     margin-top: 140px
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .highlight-panel {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+      "header header"
+      "content1 content2"
+      "content3 content4"
+      "content5 content6"
+    ;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .highlight-panel {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+      "header"
+      "content1"
+      "content2"
+      "content3"
+      "content4"
+      "content5"
+      "content6"
+    ;
   }
 }
