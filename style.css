@@ -177,6 +177,11 @@ h2 {
   padding-right: 15px;
 }
 
+.fas {
+  float: right;
+  color: rgb(87, 87, 87);
+}
+
 footer {
   margin: 0px;
   background-color: red;
