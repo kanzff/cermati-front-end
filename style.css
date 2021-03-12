@@ -53,6 +53,66 @@ span {
   cursor: pointer;
 }
 
+#newsletter {
+  position: fixed;
+  max-width: 640px;
+  padding: 5px 20px 20px 20px;
+  background-color: #007bc1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  transition: .8s;
+  bottom: 0px;
+  transition: .8s;
+}
+
+.newsletter-title {
+  font-weight: bold;
+}
+
+.btn-newsletter {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 18%;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 2px;
+  background-color: #ff8000;
+  color: white;
+}
+
+.btn-newsletter:hover {
+  cursor: pointer;
+}
+
+#close-btn {
+  margin-top: 5px;
+  float: right;
+}
+
+#close-btn span {
+  font-size: 20px;
+  color: white;
+}
+
+#close-btn:hover {
+  cursor: pointer;
+}
+
+#newsletter.hidden {
+  bottom: -300px;
+}
+
+.newsletter-tex p {
+  font-size: 16px;
+}
+
+#email-input {
+  width: 75%;
+  height: 20px;
+}
+
 .home {
   background-image: url('./assets/work-desk__dustin-lee.jpg');
   background-size: cover;
@@ -114,7 +174,8 @@ span {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 40px;
-  background-color: rgb(209, 209, 209);
+  /* background-color: rgb(209, 209, 209); */
+  background-color: #e5e5e5;
   color: rgb(43, 43, 43);
   width: 100% - 30px;
   display: grid;
@@ -240,5 +301,20 @@ footer {
       "content5"
       "content6"
     ;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #email-input {
+    width: 98.5%;
+    height: 20px;
+  }
+
+  .btn-newsletter {
+    float: none;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
   }
 }
