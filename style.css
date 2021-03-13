@@ -62,7 +62,7 @@ span {
   display: flex;
   justify-content: center;
   transition: .8s;
-  bottom: 0px;
+  bottom: -300px;
   transition: .8s;
 }
 
@@ -98,6 +98,10 @@ span {
 
 #close-btn:hover {
   cursor: pointer;
+}
+
+#newsletter.show {
+  bottom: 0px;
 }
 
 #newsletter.hidden {
